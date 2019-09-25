@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var cachoro_1 = require("./cachoro");
+var gato_1 = require("./gato");
+var listaMamiferos = [];
+var cachoro = new cachoro_1.Cachoro();
+cachoro.setNome("Pan");
+cachoro.setTamanho("Grande");
+listaMamiferos.push(cachoro);
+cachoro = new cachoro_1.Cachoro();
+cachoro.setNome("Pepi");
+cachoro.setTamanho("Grande");
+listaMamiferos.push(cachoro);
+cachoro = new cachoro_1.Cachoro();
+cachoro.setNome("Boris");
+cachoro.setTamanho("Grande");
+listaMamiferos.push(cachoro);
+var gato = new gato_1.Gato();
+gato.setTamanho("Pequeno");
+listaMamiferos.push(gato);
+listaMamiferos.forEach(function (element) {
+    element.fazerBarulho();
+});
